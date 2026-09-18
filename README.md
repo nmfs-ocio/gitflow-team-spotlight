@@ -1,6 +1,6 @@
 <div align="center">
   <img src="assets/logo.png" alt="Osprey Logo" width="150" />
-  <h1>Osprey Team Wall</h1>
+  <h1>App Delivery Team Wall</h1>
 </div>
 
 Welcome to the **Add Delivery Team Wall**! This project is a hands-on exercise designed to teach you the basics of Git and GitHub collaboration. By participating, you will learn standard version control workflows by adding your own profile card to this "Team Wall" website.
