@@ -25,8 +25,8 @@
   - [x] 3.1 Create `data.js` and define the array with 1-2 pre-filled sample templates matching the PRD.
   - [x] 3.2 Create `app.js` and link it (along with `data.js`) to `index.html`.
   - [x] 3.3 Write logic in `app.js` to iterate over the `data` array and dynamically inject the cards into `div#team-grid`.
-- [ ] 4.0 Draft the README Documentation
-  - [ ] 4.1 Create `README.md` and add the Project Title & Overview.
-  - [ ] 4.2 Add the Markdown Checklist for team members.
-  - [ ] 4.3 Add the exact step-by-step Git instructions (Assign, Clone, Branch, Edit, Commit, Push, PR).
-  - [ ] 4.4 Add the Troubleshooting section (e.g., resolving merge conflicts).
+- [x] 4.0 Draft the README Documentation
+  - [x] 4.1 Create `README.md` and add the Project Title & Overview.
+  - [x] 4.2 Add the Markdown Checklist for team members.
+  - [x] 4.3 Add the exact step-by-step Git instructions (Assign, Clone, Branch, Edit, Commit, Push, PR).
+  - [x] 4.4 Add the Troubleshooting section (e.g., resolving merge conflicts).
