@@ -12,15 +12,15 @@
 
 ## Tasks
 
-- [ ] 1.0 Set up Project Structure and Assets
+- [x] 1.0 Set up Project Structure and Assets
   - [x] 1.1 Initialize the project directory structure (e.g., create `assets/` folder).
   - [x] 1.2 Add the `assets/osprey-placeholder.png` file.
-  - [ ] 1.3 Add the `assets/avatar-placeholder.png` file.
-- [ ] 2.0 Create the UI Layout and HTML Skeleton
-  - [ ] 2.1 Create `index.html` and include the Tailwind CSS CDN.
-  - [ ] 2.2 Build the header section with the Mascot placeholder and project title (using Burnt Orange and Teal accents).
-  - [ ] 2.3 Create the main grid container for the profile cards (`div#team-grid`).
-  - [ ] 2.4 Build a static HTML template for a single profile card to verify design, then remove it for JS injection.
+  - [x] 1.3 Add the `assets/avatar-placeholder.png` file.
+- [x] 2.0 Create the UI Layout and HTML Skeleton
+  - [x] 2.1 Create `index.html` and include the Tailwind CSS CDN.
+  - [x] 2.2 Build the header section with the Mascot placeholder and project title (using Burnt Orange and Teal accents).
+  - [x] 2.3 Create the main grid container for the profile cards (`div#team-grid`).
+  - [x] 2.4 Build a static HTML template for a single profile card to verify design, then remove it for JS injection.
 - [ ] 3.0 Implement JavaScript Data Rendering
   - [ ] 3.1 Create `data.js` and define the array with 1-2 pre-filled sample templates matching the PRD.
   - [ ] 3.2 Create `app.js` and link it (along with `data.js`) to `index.html`.
