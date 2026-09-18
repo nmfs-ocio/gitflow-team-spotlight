@@ -21,10 +21,10 @@
   - [x] 2.2 Build the header section with the Mascot placeholder and project title (using Burnt Orange and Teal accents).
   - [x] 2.3 Create the main grid container for the profile cards (`div#team-grid`).
   - [x] 2.4 Build a static HTML template for a single profile card to verify design, then remove it for JS injection.
-- [ ] 3.0 Implement JavaScript Data Rendering
-  - [ ] 3.1 Create `data.js` and define the array with 1-2 pre-filled sample templates matching the PRD.
-  - [ ] 3.2 Create `app.js` and link it (along with `data.js`) to `index.html`.
-  - [ ] 3.3 Write logic in `app.js` to iterate over the `data` array and dynamically inject the cards into `div#team-grid`.
+- [x] 3.0 Implement JavaScript Data Rendering
+  - [x] 3.1 Create `data.js` and define the array with 1-2 pre-filled sample templates matching the PRD.
+  - [x] 3.2 Create `app.js` and link it (along with `data.js`) to `index.html`.
+  - [x] 3.3 Write logic in `app.js` to iterate over the `data` array and dynamically inject the cards into `div#team-grid`.
 - [ ] 4.0 Draft the README Documentation
   - [ ] 4.1 Create `README.md` and add the Project Title & Overview.
   - [ ] 4.2 Add the Markdown Checklist for team members.
