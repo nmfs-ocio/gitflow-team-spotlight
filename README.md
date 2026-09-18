@@ -69,12 +69,30 @@ Push your branch to the remote repository on GitHub:
 git push -u origin feature/your-name-card
 ```
 
-### 8. Open a Pull Request
+### 8. Open a Pull Request & Assign a Reviewer
 1. Go to the repository on GitHub.
 2. You should see a prompt to "Compare & pull request" for your recently pushed branch. Click it.
 3. Ensure the base branch is `main`.
-4. Add a brief description and create the Pull Request!
-5. Wait for a team lead to review and merge your code.
+4. Add a brief description.
+5. On the right sidebar, click **Reviewers** and select one of your teammates.
+6. Click **Assignees** and assign the PR to that same teammate. This ensures everyone gets a turn practicing code review!
+7. Click **Create Pull Request**.
+
+### 9. Review and Merge (Take your turn!)
+When a teammate assigns a PR to you:
+1. Go to the Pull Requests tab and open the PR assigned to you.
+2. Review their code in the "Files changed" tab.
+3. If it looks good, click **Review changes** and select **Approve**.
+4. Finally, click the green **Merge pull request** button to merge their profile into the `main` branch!
+
+### 🌟 Stretch Goal: Customize Your Avatar
+Want to make your card truly yours? Add a real picture instead of the placeholder!
+1. Copy a square image of yourself (e.g., `your-name.jpg`) into the project's `assets/` folder.
+2. In `data.js`, update the `avatar` path for your profile from `"assets/avatar-placeholder.png"` to `"assets/your-name.jpg"`.
+3. Make sure to stage your new image file before you commit: 
+   ```bash
+   git add assets/your-name.jpg
+   ```
 
 ---
 
