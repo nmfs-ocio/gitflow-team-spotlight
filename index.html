@@ -4,15 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git Team Wall</title>
+    <!-- Google Fonts: Lato (Body) and Plus Jakarta Sans (Headings) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom Styles for Glassmorphism & Animations -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Tailwind CSS (via CDN) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
+            darkMode: 'class', // We can toggle this or let the OS decide if using media, but 'class' lets us force it for testing
             theme: {
                 extend: {
+                    fontFamily: {
+                        sans: ['Lato', 'sans-serif'],
+                        display: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
                     colors: {
                         brand: {
-                            orange: '#D97706',
-                            teal: '#0D9488'
+                            primary: '#003087',    // NOAA Dark Blue
+                            secondary: '#0085CA',  // Process Light Blue
+                            accent: '#FF9F1C',     // Osprey Amber
+                            dark: '#0B1220',       // Dark Mode Background
+                            slate: '#0F172A',      // Slate 900
+                            light: '#F1F5F9'       // Light Text on Dark
+                        }
+                    },
+                    animation: {
+                        'moving-bg': 'moving-bg 16s ease infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        'moving-bg': {
+                            '0%, 100%': { backgroundPosition: '0% 50%' },
+                            '50%': { backgroundPosition: '100% 50%' },
+                        },
+                        'float': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
                         }
                     }
                 }
@@ -20,16 +55,19 @@
         }
     </script>
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans antialiased">
-    <header class="bg-white shadow-sm border-b-4 border-brand-orange">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex items-center justify-between">
+<body class="bg-gray-50 text-gray-900 dark:bg-brand-dark dark:text-brand-light font-sans antialiased relative min-h-screen overflow-x-hidden">
+    <!-- Animated background layers -->
+    <div class="fixed inset-0 z-[-1] bg-gradient-to-br from-brand-secondary/20 via-brand-primary/10 to-transparent dark:from-brand-primary/40 dark:via-brand-dark/80 dark:to-brand-dark animate-moving-bg bg-[length:200%_200%]"></div>
+    
+    <header class="glass-panel sticky top-0 z-10 border-b border-brand-primary/20 dark:border-brand-primary/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
             <div class="flex items-center gap-4">
-                <img src="assets/osprey-placeholder.png" alt="Osprey Mascot" class="h-16 w-16 object-cover rounded-full border-2 border-brand-teal">
-                <h1 class="text-3xl font-bold text-gray-900">
-                    <span class="text-brand-teal">Osprey</span> Team Wall
+                <img src="assets/logo.png" alt="Osprey Mascot" class="h-12 w-auto animate-float">
+                <h1 class="text-2xl font-display font-bold text-brand-slate dark:text-brand-light tracking-tight">
+                    <span class="text-brand-secondary dark:text-brand-secondary">Osprey</span> Team Wall
                 </h1>
             </div>
-            <p class="text-sm text-gray-500 hidden sm:block">A Git Collaboration Exercise</p>
+            <p class="text-sm font-medium text-brand-primary/70 dark:text-brand-secondary/80 hidden sm:block">A Git Collaboration Exercise</p>
         </div>
     </header>
 

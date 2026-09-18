@@ -12,6 +12,14 @@
 
 ## Tasks
 
+- [x] 5.0 Implement Osprey Helpdesk Design System
+  - [x] 5.1 Update PRD and project documentation.
+  - [x] 5.2 Add Google Fonts and Lucide Icons CDN to index.html.
+  - [x] 5.3 Update Tailwind configuration (colors, animations, dark mode) in index.html.
+  - [x] 5.4 Create styles.css with Glassmorphism tier classes.
+  - [x] 5.5 Update index.html layout and logo.png to use the new design system.
+  - [x] 5.6 Update app.js card template to apply new design system.
+
 - [x] 1.0 Set up Project Structure and Assets
   - [x] 1.1 Initialize the project directory structure (e.g., create `assets/` folder).
   - [x] 1.2 Add the `assets/osprey-placeholder.png` file.

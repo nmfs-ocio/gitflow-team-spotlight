@@ -1,0 +1,60 @@
+/* Custom Glassmorphism Tiers */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.dark .glass-panel {
+    background: rgba(15, 23, 42, 0.7);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.glass-panel-float {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 10px 25px rgba(0, 48, 135, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.glass-panel-float:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(0, 48, 135, 0.15);
+}
+
+.dark .glass-panel-float {
+    background: rgba(15, 23, 42, 0.85);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.dark .glass-panel-float:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+}
+
+.glass-panel-alert {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 159, 28, 0.5);
+    box-shadow: 0 0 15px rgba(255, 159, 28, 0.2);
+}
+
+.dark .glass-panel-alert {
+    background: rgba(15, 23, 42, 0.9);
+    border: 1px solid rgba(255, 159, 28, 0.4);
+    box-shadow: 0 0 15px rgba(255, 159, 28, 0.15);
+}
+
+/* Animations */
+@keyframes shimmer {
+    0% { background-position: -1000px 0; }
+    100% { background-position: 1000px 0; }
+}
+
+.animate-shimmer {
+    animation: shimmer 2s infinite linear;
+    background: linear-gradient(to right, rgba(255,255,255,0) 4%, rgba(255,255,255,0.25) 25%, rgba(255,255,255,0) 36%);
+    background-size: 1000px 100%;
+}

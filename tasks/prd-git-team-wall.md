@@ -14,9 +14,14 @@ This project is a hands-on exercise designed to teach staff the basics of Git. B
 
 ## Functional Requirements
 1. **Technology Stack:** The project must use vanilla HTML5, CSS (via Tailwind CDN), and JavaScript. No build steps are allowed.
-2. **UI & Layout:** The interface must be a modern, sleek, light-mode grid of team member profile cards.
-3. **Branding:** The color palette must feature Burnt Orange and Teal accents.
-4. **Mascot Placeholder:** The header/top of the page must include an image placeholder for the team mascot ("Osprey").
+2. **UI & Layout:** The interface must be a modern, maritime-inspired glassmorphism UI with dark mode support.
+3. **Branding & Colors:** 
+   - Primary: NOAA Dark Blue (`#003087`)
+   - Secondary: Process Light Blue (`#0085CA`)
+   - Accent/Alert: Osprey Amber (`#FF9F1C`)
+   - Backgrounds/Text: Slate 900 (`#0F172A`) for light mode, `#0B1220` and `#F1F5F9` for dark mode.
+4. **Typography:** `Lato` for body text and `Plus Jakarta Sans` for headings.
+5. **Mascot Logo:** The header/top of the page must use the `assets/logo.png` image.
 5. **Profile Cards:** Each card must display:
    - Avatar Image Placeholder
    - Name
@@ -44,9 +49,10 @@ This project is a hands-on exercise designed to teach staff the basics of Git. B
 - Backend databases or API integrations.
 
 ## Design Considerations
-- **Theme:** Light mode.
-- **Accents:** Burnt Orange and Teal.
-- **Images:** Clear placeholder squares/circles for avatars and the "Osprey" mascot.
+- **Theme:** Full Dark Mode and Light Mode support.
+- **Glassmorphism:** Use custom CSS tiers (`.glass-panel`, `.glass-panel-float`, `.glass-panel-alert`) to create translucent, maritime-inspired cards.
+- **Animations:** Implement custom keyframes (e.g., `animate-moving-bg`, `animate-aurora`, `animate-float`) to add polish and simulate nautical elements.
+- **Icons:** Use `lucide` via CDN for standard iconography.
 
 ## Success Metrics
 - Team members successfully open Pull Requests containing their profile data.
