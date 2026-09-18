@@ -13,11 +13,11 @@ The project is built using purely vanilla HTML, CSS (Tailwind via CDN), and Java
 
 When you open your Pull Request (PR), please check off your name below so we can track who has completed the exercise:
 
-- [ ] Teammate 1
-- [ ] Teammate 2
-- [ ] Teammate 3
-- [ ] Teammate 4
-- [ ] Teammate 5
+- [ ] Joshua
+- [ ] Britany
+- [ ] Erika
+- [ ] Scott
+- [ ] Mukta
 
 ---
 
