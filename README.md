@@ -14,7 +14,7 @@ The project is built using purely vanilla HTML, CSS (Tailwind via CDN), and Java
 When you open your Pull Request (PR), please check off your name below so we can track who has completed the exercise:
 
 - [ ] Joshua
-- [ ] Britany
+- [X] Britany
 - [ ] Erika
 - [ ] Scott
 - [ ] Mukta

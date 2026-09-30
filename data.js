@@ -14,5 +14,13 @@ const teamMembers = [
         favoriteTech: "Figma & CSS",
         github: "johnsmith",
         avatar: "assets/avatar-placeholder.png"
+    },
+{
+        name: "Brittany Davis",
+        role: "Hacker/Developer",
+        bio: "Enthusiastic about learning RADFish and understanding the complexity of GCP.",
+        favoriteTech: "Java & Tableau",
+        github: "brittany-d-davis",
+        avatar: "assets/brittany-davis.png"
     }
 ];
